@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 import json
+import time
 import config
 from requests_oauthlib import OAuth1Session
 
@@ -37,4 +38,4 @@ search_words = [a+b+c+d for a in lis for b in lis for c in lis for d in lis]
 for word in search_words:
     print(word+":")
     search_tweet(word)
-    sleep(3)
+    time.sleep(3)
